@@ -95,7 +95,7 @@ WAR, or JAR bundle part.<br /></td>
             
 <td>-</td>
             
-<td>The Maven classifier to use for the generated bundle archive.<br /></td>
+<td>The Maven classifier to use for the generated bundle archive.<br /><b>User property is</b>: cicsbundle.classifier.<br /></td>
           </tr>
           
 <tr class="b">
@@ -108,7 +108,7 @@ WAR, or JAR bundle part.<br /></td>
             
 <td>The default fallback value for the CICS JVM server that will be
 used for any Java-based artifacts that don't have a JVM server
-specified.<br /><b>Default value is</b>: MYJVMS.<br /></td>
+specified.<br /><b>Default value is</b>: MYJVMS.<br /><b>User property is</b>: cicsbundle.defaultjvmserver.<br /></td>
           </tr>
         </table>
       </section>
@@ -135,6 +135,8 @@ WAR, or JAR bundle part.</div>
 <li><b>Type</b>: java.lang.String</li>
           
 <li><b>Required</b>: No</li>
+          
+<li><b>User Property</b>: cicsbundle.classifier</li>
         </ul><hr /></section><section>
 <h4><a name="a.3Cdefaultjvmserver.3E"></a><b><a name="defaultjvmserver">&lt;defaultjvmserver&gt;</a></b></h4>
         
@@ -147,6 +149,8 @@ specified.</div>
 <li><b>Type</b>: java.lang.String</li>
           
 <li><b>Required</b>: No</li>
+          
+<li><b>User Property</b>: cicsbundle.defaultjvmserver</li>
           
 <li><b>Default</b>: MYJVMS</li>
         </ul>
