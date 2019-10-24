@@ -94,7 +94,7 @@ bundle with a command-line parameter to switch Maven profiles.</p></div>
 Must be present already in the CSD relating to the configured
 cicsplex/region, and must be configured with the correct bundle
 directory according to the bundle deployment API configuration and
-the name of the bundle the user is deploying.<br /></td>
+the name of the bundle the user is deploying.<br /><b>User property is</b>: cicsbundle.bunddef.<br /></td>
           </tr>
           
 <tr class="a">
@@ -105,7 +105,7 @@ the name of the bundle the user is deploying.<br /></td>
             
 <td>-</td>
             
-<td>The CSD group containing the bundle definition to be installed.<br /></td>
+<td>The CSD group containing the bundle definition to be installed.<br /><b>User property is</b>: cicsbundle.csdgroup.<br /></td>
           </tr>
         </table>
       </section>
@@ -133,7 +133,7 @@ the name of the bundle the user is deploying.<br /></td>
             
 <td>-</td>
             
-<td>The filename of the bundle archive file to be deployed.<br /></td>
+<td>The filename of the bundle archive file to be deployed.<br /><b>User property is</b>: cicsbundle.bundle.<br /></td>
           </tr>
           
 <tr class="a">
@@ -146,7 +146,7 @@ the name of the bundle the user is deploying.<br /></td>
             
 <td>The name of the CICSplex the bundle should be installed into.
 Specifying this parameter overrides any value provided within a
-Maven settings server entry.<br /></td>
+Maven settings server entry.<br /><b>User property is</b>: cicsbundle.cicsplex.<br /></td>
           </tr>
           
 <tr class="b">
@@ -159,7 +159,7 @@ Maven settings server entry.<br /></td>
             
 <td>The classifier of a bundle attached to this project which is to be
 deployed. If a value for the @bundle parameter is supplied, this
-classifier is ignored.<br /></td>
+classifier is ignored.<br /><b>User property is</b>: cicsbundle.classifier.<br /></td>
           </tr>
           
 <tr class="a">
@@ -173,7 +173,7 @@ classifier is ignored.<br /></td>
 <td>When connecting to the CICS bundle deployment API, do not check
 that the trust chain of the host certificate is valid, do not
 verify that the host name of certificate matches host name of
-server.<br /><b>Default value is</b>: false.<br /></td>
+server.<br /><b>Default value is</b>: false.<br /><b>User property is</b>: cicsbundle.insecure.<br /></td>
           </tr>
           
 <tr class="b">
@@ -185,7 +185,7 @@ server.<br /><b>Default value is</b>: false.<br /></td>
 <td>-</td>
             
 <td>The password to authenticate with. Specifying this parameter
-overrides any value provided within a Maven settings server entry.<br /></td>
+overrides any value provided within a Maven settings server entry.<br /><b>User property is</b>: cicsbundle.password.<br /></td>
           </tr>
           
 <tr class="a">
@@ -198,7 +198,7 @@ overrides any value provided within a Maven settings server entry.<br /></td>
             
 <td>The name of the region the bundle should be installed into.
 Specifying this parameter overrides any value provided within a
-Maven settings server entry.<br /></td>
+Maven settings server entry.<br /><b>User property is</b>: cicsbundle.region.<br /></td>
           </tr>
           
 <tr class="b">
@@ -223,7 +223,7 @@ Maven settings server entry.<br /></td>
 <td>The CMCI URL that the CICS bundle deployment API is available on.
 For example `https://yourcicshost.com:9080`. Specifying this
 parameter overrides any value provided within a Maven settings
-server entry.<br /></td>
+server entry.<br /><b>User property is</b>: cicsbundle.url.<br /></td>
           </tr>
           
 <tr class="b">
@@ -235,7 +235,7 @@ server entry.<br /></td>
 <td>-</td>
             
 <td>The username to authenticate with. Specifying this parameter
-overrides any value provided within a Maven settings server entry.<br /></td>
+overrides any value provided within a Maven settings server entry.<br /><b>User property is</b>: cicsbundle.username.<br /></td>
           </tr>
         </table>
       </section>
@@ -255,6 +255,8 @@ the name of the bundle the user is deploying.</div>
 <li><b>Type</b>: java.lang.String</li>
           
 <li><b>Required</b>: Yes</li>
+          
+<li><b>User Property</b>: cicsbundle.bunddef</li>
         </ul><hr /></section><section>
 <h4><a name="a.3Cbundle.3E"></a><b><a name="bundle">&lt;bundle&gt;</a></b></h4>
         
@@ -265,6 +267,8 @@ the name of the bundle the user is deploying.</div>
 <li><b>Type</b>: java.lang.String</li>
           
 <li><b>Required</b>: No</li>
+          
+<li><b>User Property</b>: cicsbundle.bundle</li>
         </ul><hr /></section><section>
 <h4><a name="a.3Ccicsplex.3E"></a><b><a name="cicsplex">&lt;cicsplex&gt;</a></b></h4>
         
@@ -277,6 +281,8 @@ Maven settings server entry.</div>
 <li><b>Type</b>: java.lang.String</li>
           
 <li><b>Required</b>: No</li>
+          
+<li><b>User Property</b>: cicsbundle.cicsplex</li>
         </ul><hr /></section><section>
 <h4><a name="a.3Cclassifier.3E"></a><b><a name="classifier">&lt;classifier&gt;</a></b></h4>
         
@@ -289,6 +295,8 @@ classifier is ignored.</div>
 <li><b>Type</b>: java.lang.String</li>
           
 <li><b>Required</b>: No</li>
+          
+<li><b>User Property</b>: cicsbundle.classifier</li>
         </ul><hr /></section><section>
 <h4><a name="a.3Ccsdgroup.3E"></a><b><a name="csdgroup">&lt;csdgroup&gt;</a></b></h4>
         
@@ -299,6 +307,8 @@ classifier is ignored.</div>
 <li><b>Type</b>: java.lang.String</li>
           
 <li><b>Required</b>: Yes</li>
+          
+<li><b>User Property</b>: cicsbundle.csdgroup</li>
         </ul><hr /></section><section>
 <h4><a name="a.3Cinsecure.3E"></a><b><a name="insecure">&lt;insecure&gt;</a></b></h4>
         
@@ -313,6 +323,8 @@ server.</div>
           
 <li><b>Required</b>: No</li>
           
+<li><b>User Property</b>: cicsbundle.insecure</li>
+          
 <li><b>Default</b>: false</li>
         </ul><hr /></section><section>
 <h4><a name="a.3Cpassword.3E"></a><b><a name="password">&lt;password&gt;</a></b></h4>
@@ -325,6 +337,8 @@ overrides any value provided within a Maven settings server entry.</div>
 <li><b>Type</b>: java.lang.String</li>
           
 <li><b>Required</b>: No</li>
+          
+<li><b>User Property</b>: cicsbundle.password</li>
         </ul><hr /></section><section>
 <h4><a name="a.3Cregion.3E"></a><b><a name="region">&lt;region&gt;</a></b></h4>
         
@@ -337,6 +351,8 @@ Maven settings server entry.</div>
 <li><b>Type</b>: java.lang.String</li>
           
 <li><b>Required</b>: No</li>
+          
+<li><b>User Property</b>: cicsbundle.region</li>
         </ul><hr /></section><section>
 <h4><a name="a.3CserverId.3E"></a><b><a name="serverId">&lt;serverId&gt;</a></b></h4>
         
@@ -360,6 +376,8 @@ server entry.</div>
 <li><b>Type</b>: java.lang.String</li>
           
 <li><b>Required</b>: No</li>
+          
+<li><b>User Property</b>: cicsbundle.url</li>
         </ul><hr /></section><section>
 <h4><a name="a.3Cusername.3E"></a><b><a name="username">&lt;username&gt;</a></b></h4>
         
@@ -371,6 +389,8 @@ overrides any value provided within a Maven settings server entry.</div>
 <li><b>Type</b>: java.lang.String</li>
           
 <li><b>Required</b>: No</li>
+          
+<li><b>User Property</b>: cicsbundle.username</li>
         </ul>
       </section></section>
     </section>
