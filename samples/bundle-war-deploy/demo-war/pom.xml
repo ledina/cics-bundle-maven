@@ -9,7 +9,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
 
-  <name>Liberty Profile Sample - Servlet</name>
+  <name>Liberty Profile Sample - Servlet </name>
   <url>https://wasdev.github.io</url>
 
   <licenses>
